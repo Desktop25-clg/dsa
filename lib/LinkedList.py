@@ -118,3 +118,16 @@ class LinkedList:
             temp = next_node
 
         self.head = reverse
+    
+    #Finding the middle Node
+    def middle_node(self):
+        if self.head is None:
+            return "Linked list is Empty"
+
+        fast = self.head
+        slow = self.head
+
+        while fast and fast.next:
+            fast = fast.next.next
+            slow = slow.next
+        return slow.data

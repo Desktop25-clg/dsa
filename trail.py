@@ -9,5 +9,4 @@ ll1.insert_end(5)
 ll1.print_ll()
 print("Length of the List: ",ll1.length)
 
-ll1.reverse_ll()
-ll1.print_ll()
+print(ll1.middle_node())
